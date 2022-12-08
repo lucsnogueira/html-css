@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixa</title>
+</head>
+<style>
+    /*  Tipos de Caixa:
+ 
+    Box-level:                       inline-level:
+    <div>                            <Span>
+    <h1> - <h6>                      <a>
+    <p>                              <small>
+    <main>                           <strong>
+    <header>                         <em>
+    <nav>                            <sup> - <sub>
+    <article>                        <label>
+    <aside>                          <button>
+    <footer>                         <input>
+    <form>                           <select>
+    <video>                          <code>
+
+
+*/
+
+h1 {
+    /*
+    Hierarquia dos short hands:
+
+    Quando todos os valores forem iguais = informar apenas um tamanho
+    Quando valores de cima/baixo e esquerda/direita forem iguais = informar apenas dois valores (sendo primeiro de cima/baixo e o segundo esquerda/direita)
+    Quando todos os valores forem diferentes = informar todos individualmente
+    */
+    
+    
+    
+    background-color: lightgrey;
+    
+    height: 300px;
+    width: 300px;
+    
+    border-width: 10px;
+    border-style: solid;
+    border-color: antiquewhite;
+
+    border: 10px solid antiquewhite;
+   
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    /*shot hand*/padding: 10px 10px 10px 10px;
+
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+
+    /*shot hand*/ margin: 10px 10px 40px 10px;
+
+    outline-width: 10px;
+    outline-style: dashed;
+    outline-color: salmon;
+
+    /*shot hand*/ outline: 10px dashed salmon;
+}
+
+a {
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: red;
+}
+</style>
+<body>
+    <h1>exemplo de caixa de box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

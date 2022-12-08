@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando pseudo-classe</title>
+</head>
+<style>
+    body {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    div > p {
+        display: none;
+    }
+
+    div:hover > p {
+        display:block;
+        background-color: black;
+        color: aliceblue;
+        width: 200px;
+    }
+
+    div#exit:hover > p {
+        background-color: red;
+        color: white;
+    }
+
+    div.extensao:hover > p {
+        background-color: red;
+        color: black;
+    }
+</style>
+<body>
+    <h1>Teste 1</h1>
+    
+    <h2>Protótipo simplificado de menu:</h2>
+    
+    <h1>Menu</h1>
+    
+    <div>
+        Vídeo
+        <p>Gráficos</p>
+    </div>
+    
+    <div>
+        Som
+        <p>Surround</p>
+    </div>
+    
+    <div>
+        Idioma
+        <p>Português</p>
+    </div>
+    
+    <div>
+        Gerais
+        <p>Reiniciar configurações</p>
+    </div>
+    
+    <div id="exit">
+        Sair do Jogo
+        <p>Tem certeza que deseja encerrar o jogo? (caso não tenha salvado, correrá o risco de perder o progresso)</p>
+    </div>
+
+    <h1>Menu de extensão</h1>
+    
+    <div class="extensao">
+        Idioma de Novos Personagens
+        <p>Opção indisponível temporariamente.</p>
+    </div>
+    
+    <div class="extensao">
+        Dificuldade do Mundo
+        <p>Opção indisponível temporariamente.</p>
+    </div>
+    
+    <div class="extensao">
+        Atualização Disponíveis Para Extensões
+        <p>Opção indisponível temporariamente.</p>
+    </div>
+
+    <div class="extensao">
+        Gerenciar Extensões
+        <p>Opção indisponível temporariamente.</p>
+    </div>
+
+</body>
+</html> 
