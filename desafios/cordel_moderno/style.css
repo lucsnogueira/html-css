@@ -1,8 +1,23 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: Cordel Encarnado;
+    src: url(fonts/Cordel\ Encarnado.otf) format('opentype');
+}
+
+@font-face {
+    font-family: Cordel Encarnado II;
+    src: url(fonts/Cordel\ Encarnado\ II.otf) format('opentype');
+}
+
 * {
     margin: 0px;
     padding: 0px;
+}
+
+:root {
+    --font1: Cordel Encarnado;
+    --font2: Cordel Encarnado II;
 }
 
 html, body {
@@ -10,10 +25,16 @@ html, body {
     background-color: darkgray;
 }
 
+body {
+    font-family: var(--font2)
+}
+
 header {
     background-color: black;
     color: white;
     text-align: center;
+    font-family: var(--font1);
+    font-size: 2vw;
 }
 
 header > h1 {
@@ -36,10 +57,10 @@ header a:hover, footer a:hover {
 }
 
 section {
+    padding-left: 30px;
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
-    padding-left: 30px;
+    line-height: 3vw;
 }
 
 section.normal {
@@ -53,7 +74,8 @@ section.imagem {
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.253);
 }
 
@@ -62,4 +84,6 @@ footer {
     color: white;
     text-align: center;
     padding: 5px;
+    font-family: var(--font1);
+    font-size: 2vw;
 }
