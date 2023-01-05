@@ -16,6 +16,7 @@
 
         table {
             width: 400px;
+            height: 400px;
             border-collapse: collapse;
         }
 
@@ -26,6 +27,8 @@
         td {
             border: 1px solid black;
             padding: 5px;
+            text-align: center; /* Alinhamento horizontal*/
+            vertical-align: middle; /* Alinhamento vertical (middle = center, é o padrão)*/
         }
 
         td.dado {
@@ -34,6 +37,10 @@
 
         td.interno {
             box-shadow: inset 4px 4px 3px rgba(0, 0, 0, 0.411);
+        }
+
+        .numero {
+            text-align: right;
         }
     </style>
 </head>
@@ -47,27 +54,27 @@
                 TABLE DATA = dado de tabela
     -->
 
-    <!-- O fechado dos parâmetros td e tr são opcionais-->
+    <!-- O fechado dos parâmetros td e tr são opcionais -->
     <table>
-        <tr> <!-- Primeira linha-->
+        <tr> <!-- Primeira linha -->
             <td class="interno">A1</td>
             <td>B1</td>
             <td>C1</td>
         </tr>
-        <tr class="linha"> <!-- Segunda linha-->
+        <tr class="linha"> <!-- Segunda linha -->
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
         </tr>
-        <tr> <!-- Terceira linha-->
+        <tr> <!-- Terceira linha -->
             <td>A3</td>
             <td>B3</td>
             <td>C3</td>
         </tr>
-        <tr> <!-- Quarta linha-->
+        <tr> <!-- Quarta linha -->
             <td>A4</td>
             <td>B4</td>
-            <td class="dado">C4</td>
+            <td class="dado numero">C4</td>
         </tr>
     </table>
 </body>
