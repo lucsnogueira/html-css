@@ -21,10 +21,17 @@
             background-color: lightgrey;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
         table {
             width: 500px;
             border-collapse: collapse;
             margin: auto;
+            position: relative;
         }
 
         tbody > tr:nth-child(2n) /* 2n-1 = odd / 2n = even*/{ 
