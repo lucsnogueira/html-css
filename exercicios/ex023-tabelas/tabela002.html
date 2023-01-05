@@ -13,11 +13,22 @@
         body > h1 {
             text-align: center;
         }
-        
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 20px;
+            background-color: lightgrey;
+        }
+
         table {
             width: 500px;
             border-collapse: collapse;
             margin: auto;
+        }
+
+        tbody > tr:nth-child(2n) /* 2n-1 = odd / 2n = even*/{ 
+            background-color: lightgray;
         }
 
         td, th {
@@ -41,18 +52,24 @@
     <!--
         Anatomia para tabelas grandes:
         Table
+            Caption (LEGENDA DA TABELA)
             thead
                 tr, td, th
             tbody
                 tr, td, th
             tfoot
                 tr, td, th
+        
+        (TH é título, TD é dado)
     -->
     <table>
+        <caption>
+            População dos Estados Brasileiros
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 150px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -167,7 +184,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitante</th>
+                <th scope="row">Total de Habitante</th>
                 <td class="num"><strong>214 700 861</strong></td>
             </tr>
         </tfoot>
